@@ -1,0 +1,21 @@
+{
+  "name": "ember-typeahead.js",
+  "version": "0.1.0",
+  "description": "A typeahead box using twitter's typeahead",
+  "main": "./ember-typeahead.js",
+  "keywords": [
+    "ember",
+    "typeahead",
+    "autocomplete"
+  ],
+  "ignore": [
+    "src",
+    "bower.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "ember": ">=1.5.0",
+    "typeahead.js": "~0.10.2"
+  }
+}
