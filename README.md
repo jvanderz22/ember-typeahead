@@ -1,4 +1,4 @@
-Ember yypeahead component
+Ember typeahead component
 =========================
 
-Ember typeahead component using twitter's typahead
+Ember typeahead component using twitter's typeahead
