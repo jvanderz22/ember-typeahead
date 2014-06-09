@@ -4,7 +4,7 @@ var substringMatcher = function(data, key) {
 
     // iterate through objects to match the matching
     $.each(data, function(i, obj) {
-      var str = Em.isEmpty(obj[key] || obj.get('key')) ? obj : obj[key] || obj.get('key');
+      var str = Em.isEmpty(obj.get(key)) ? obj : obj.get(key);
       if (substrRegex.test(str)) {
         var x = {obj: obj};
         x[key] = str;

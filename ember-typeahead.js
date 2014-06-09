@@ -5,12 +5,7 @@
 
       // iterate through objects to match the matching
       $.each(data, function(i, obj) {
-        var str = obj;
-        if (!Em.isEmpty(obj.get)) {
-          str = Em.isEmpty(obj.get('key')) ? obj : obj.get('key');
-        } else {
-          str = Em.isEmpty(obj[key]) ? obj : obj[key];
-        }
+        var str = Em.isEmpty(obj.get('key')) ? obj : obj.get('key');
         if (substrRegex.test(str)) {
           var x = {obj: obj};
           x[key] = str;
