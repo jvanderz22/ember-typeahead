@@ -1,6 +1,6 @@
 {
   "name": "ember-typeahead.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A typeahead box using twitter's typeahead",
   "main": "./ember-typeahead.js",
   "keywords": [
@@ -15,7 +15,7 @@
     "LICENSE"
   ],
   "dependencies": {
-    "ember": ">=1.5.0",
+    "ember": ">=1.5.1",
     "typeahead.js": "~0.10.2"
   }
 }
