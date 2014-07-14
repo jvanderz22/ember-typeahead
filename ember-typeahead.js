@@ -72,7 +72,12 @@
         displayKey: key,
         source: substringMatcher(content, key)
       };
-    }
+    },
+    clearDataset: function() {
+      if (Em.isBlank(this.get('selection'))) {
+        this.$().val('');
+      }
+    }.observes('selection')
   });
 
   Em.Handlebars.helper('type-ahead', Em.TypeaheadComponent);

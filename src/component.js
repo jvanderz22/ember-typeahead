@@ -70,5 +70,10 @@ export default Em.TextField.extend({
       displayKey: key,
       source: substringMatcher(content, key)
     };
-  }
+  },
+  clearDataset: function() {
+    if (Em.isBlank(this.get('selection'))) {
+      this.$().val('');
+    }
+  }.observes('selection')
 });
