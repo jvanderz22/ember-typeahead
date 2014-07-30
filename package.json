@@ -1,0 +1,31 @@
+{
+  "name": "ember-typeahead",
+  "version": "0.1.2",
+  "description": "A typeahead box using twitter's typeahead",
+  "main": "build/ember-typeahead.js",
+  "keywords": [
+    "ember",
+    "typeahead",
+    "autocomplete"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gevious/ember-typeahead"
+  },
+  "author": "Nico Gevers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gevious/ember-typeahead/issues"
+  },
+  "homepage": "https://github.com/gevious/ember-typeahead",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-watch": "~0.4.0"
+  }
+}
