@@ -7,9 +7,7 @@ module.exports = function(grunt) {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
         process: function(src, filepath) {
-          return '(function() {\n' + src +
-            "Em.Handlebars.helper('type-ahead', Em.TypeaheadComponent);\n" +
-            '})();';
+          return '(function() {\n' + src + '})();';
         }
       },
       dist: {

@@ -78,3 +78,5 @@ Em.TypeaheadComponent = Em.TextField.extend({
     }
   }.observes('selection')
 });
+
+Em.Handlebars.helper('type-ahead', Em.TypeaheadComponent);
