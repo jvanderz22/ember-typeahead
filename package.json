@@ -1,8 +1,8 @@
 {
-  "name": "ember-type-ahead",
-  "version": "0.2.0",
-  "description": "A typeahead box using twitter's typeahead",
-  "ember-addon-main": "lib/ember-cli-typeahead.js",
+  "name": "ember-cli-type-ahead",
+  "version": "0.2.3",
+  "description": "A type ahead box using twitter's type ahead",
+  "ember-addon-main": "lib/ember-cli-type-ahead.js",
   "keywords": [
     "ember-addon",
     "typeahead",
