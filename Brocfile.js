@@ -12,8 +12,8 @@ var app = new EmberApp({
   }
 });
 
-app.import('vendor/ember-cli-type-ahead/styles/style.css');
-app.import('vendor/ember-cli-type-ahead/js/twitter-typeahead.js');
+app.import('vendor/ember-cli-typeahead/styles/style.css');
+app.import('vendor/ember-cli-typeahead/js/twitter-typeahead.js');
 // Use `app.import` to add additional libraries to the generated
 // output files.
 //

@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ember Type Ahead</title>
+    <title>Ember Typeahead</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{BASE_TAG}}
 
     <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/ember-type-ahead.css">
+    <link rel="stylesheet" href="assets/ember-cli-typeahead.css">
   </head>
   <body>
     <script>
-      window.EmberTypeAheadENV = {{ENV}};
-      window.EmberENV = window.EmberTypeAheadENV.EmberENV;
+      window.EmberTypeaheadENV = {{ENV}};
+      window.EmberENV = window.EmberTypeaheadENV.EmberENV;
     </script>
     <script src="assets/vendor.js"></script>
-    <script src="assets/ember-type-ahead.js"></script>
+    <script src="assets/ember-cli-typeahead.js"></script>
     <script>
-      window.EmberTypeAhead = require('ember-type-ahead/app')['default'].create(EmberTypeAheadENV.APP);
+      window.EmberTypeahead = require('ember-cli-typeahead/app')['default'].create(EmberTypeaheadENV.APP);
     </script>
   </body>
 </html>
