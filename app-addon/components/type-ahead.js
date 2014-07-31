@@ -1,10 +1,9 @@
-/*! ember-typeahead 2014-07-30 */
-(function() {var substringMatcher = function(data, key) {
+var substringMatcher = function(data, key) {
   return function findMatches(q, cb) {
     var matches = [],  substrRegex = new RegExp(q, 'i');
 
     // iterate through objects to match the matching
-    $.each(data, function(i, obj) {
+    data.forEach(function(obj) {
       var str = Em.isEmpty(obj.get(key)) ? obj : obj.get(key);
       if (substrRegex.test(str)) {
         var x = {obj: obj};
@@ -17,7 +16,7 @@
   };
 };
 
-Em.TextField.extend({
+export default Em.TextField.extend({
   highlight: false,
   hint: true,
   minLength: 1,
@@ -79,4 +78,3 @@ Em.TextField.extend({
     }
   }.observes('selection')
 });
-})();

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ember Type Ahead</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/ember-type-ahead.css">
+  </head>
+  <body>
+    <script>
+      window.EmberTypeAheadENV = {{ENV}};
+      window.EmberENV = window.EmberTypeAheadENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/ember-type-ahead.js"></script>
+    <script>
+      window.EmberTypeAhead = require('ember-type-ahead/app')['default'].create(EmberTypeAheadENV.APP);
+    </script>
+  </body>
+</html>
