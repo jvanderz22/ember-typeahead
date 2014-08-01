@@ -1,3 +1,5 @@
+import Em from 'ember';
+
 export default Em.Controller.extend({
   remoteContent: function() {
     var data = Em.A([]);

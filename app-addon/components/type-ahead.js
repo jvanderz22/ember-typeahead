@@ -1,3 +1,4 @@
+import Em from 'ember';
 var substringMatcher = function(data, key) {
   return function findMatches(q, cb) {
     var matches = [],  substrRegex = new RegExp(q, 'i');
