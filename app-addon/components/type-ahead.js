@@ -56,7 +56,7 @@ export default Em.TextField.extend({
   dataset: function() {
     var that=this, content=this.get('content');
 
-    if (jQuery.isFunction(content.then)) {
+    if (window.jQuery.isFunction(content.then)) {
       content.then(function(data) {
         return that.loadDataset(data);
       });

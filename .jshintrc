@@ -2,7 +2,6 @@
   "predef": {
     "document": true,
     "window": true,
-    "jQuery": true,
     "EmberTypeaheadENV": true
   },
   "browser" : true,
