@@ -13,14 +13,12 @@
     <link rel="stylesheet" href="assets/ember-cli-typeahead.css">
   </head>
   <body>
-    <script>
-      window.EmberTypeaheadENV = {{ENV}};
-      window.EmberENV = window.EmberTypeaheadENV.EmberENV;
-    </script>
     <script src="assets/vendor.js"></script>
     <script src="assets/ember-cli-typeahead.js"></script>
     <script>
-      window.EmberTypeahead = require('ember-cli-typeahead/app')['default'].create(EmberTypeaheadENV.APP);
+      window.EmberCliTypeaheadENV = require('ember-cli-typeahead/config/environment')['default'];
+      window.EmberENV = window.EmberCliTypeaheadENV.EmberENV;
+      window.EmberCliTypeahead = require('ember-cli-typeahead/app')['default'].create(EmberCliTypeaheadENV.APP);
     </script>
   </body>
 </html>

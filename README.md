@@ -1,16 +1,9 @@
-Ember typeahead component
+Ember CLI typeahead component
 =========================
 
-Ember typeahead component using twitter's typeahead
+This component uses twitter's typeahead (for now) with an ember back-end.
 
 Install
 =======
 
-    bower install --save typeahead.js
-    
-Using Ember-cli
-===============
-Add the following to your `Brocfile.js`
-
-  app.import('vendor/typeahead.js/dist/typeahead.bundle.js');
-  app.import('vendor/ember-typeahead.js/ember-typeahead.js');
+    npm install --save-dev ember-cli-typeahead
