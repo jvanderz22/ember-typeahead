@@ -1,19 +1,9 @@
-var mergeTrees = require('broccoli-merge-trees');
+/* global require, module */
 
-var appTree    = mergeTrees(['app', 'app-addon'], { overwrite: true });
-var vendorTree = mergeTrees(['bower_components', 'vendor-addon']);
+var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
-var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var app = new EmberAddon();
 
-var app = new EmberApp({
-  trees: {
-    app: appTree,
-    vendor: vendorTree
-  }
-});
-
-app.import('bower_components/ember-cli-typeahead/styles/style.css');
-app.import('bower_components/ember-cli-typeahead/js/twitter-typeahead.js');
 // Use `app.import` to add additional libraries to the generated
 // output files.
 //
@@ -26,5 +16,8 @@ app.import('bower_components/ember-cli-typeahead/js/twitter-typeahead.js');
 // modules that you would like to import into your application
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
+
+app.import('bower_components/typeahead.js/dist/typeahead.jquery.js');
+app.import('vendor/typeahead.css');
 
 module.exports = app.toTree();
