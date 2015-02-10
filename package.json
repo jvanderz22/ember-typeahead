@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-typeahead",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A type ahead box using twitter's type ahead",
   "directories": {
     "doc": "doc",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gevious/ember-typeahead"
+    "url": "https://github.com/squirelabs/ember-typeahead"
   },
   "engines": {
     "node": ">= 0.10.0"
@@ -30,9 +30,9 @@
   "author": "Nico Gevers",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gevious/ember-typeahead/issues"
+    "url": "https://github.com/squirelabs/ember-typeahead/issues"
   },
-  "homepage": "https://github.com/gevious/ember-typeahead",
+  "homepage": "https://github.com/squirelabs/ember-typeahead",
   "devDependencies": {
     "body-parser": "^1.2.0",
     "broccoli-asset-rev": "0.0.17",
