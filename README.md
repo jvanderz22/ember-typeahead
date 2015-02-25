@@ -10,7 +10,14 @@ ember g ember-cli-typeahead
 ## Basic Usage
 
   {{type-ahead class="typeahead" placeholder="Search countries"
-             name="countries" highlight=true content=content}}
+             name="countries" highlight=true content=content targetAction="typeAheadTargetAction"}}
+             
+## Properties
+
+* content: The data used in the lookup.
+* targetAction: This is the action that will be called on events focusIn, focusOut, keyUp and keyDown. The action 
+will pass in a corresponding value to let the controller know which event triggered it - i.e "focus-in", "focus-out", 
+"key-up" or "key-down".
 
 ## Demo
 Check out the demo on [github pages](http://gevious.github.io/ember-typeahead/ "Ember-typeahead Demo").

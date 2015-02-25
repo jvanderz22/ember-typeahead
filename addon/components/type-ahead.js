@@ -24,6 +24,25 @@ export default Em.TextField.extend({
   autofocus: true,
   _typeahead: null,
   selection: null,
+
+  focusOut: function(){
+    this.sendAction('targetAction', "focus-out");
+  },
+
+  focusIn: function(){
+    this.sendAction('targetAction', "focus-in");
+  },
+
+  keyUp: function(){
+    this.sendAction('targetAction', "key-up");
+  },
+
+  keyDown: function(){
+    this.sendAction('targetAction', "key-down");
+  },
+
+  /* Can add more event catchers here */
+
   didInsertElement: function() {
     this._super();
     this.initializeTypeahead();
