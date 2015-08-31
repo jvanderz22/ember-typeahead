@@ -1,6 +1,6 @@
 {
   "name": "jvanderz22-ember-cli-typeahead",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A type ahead box using twitter's type ahead",
   "directories": {
     "doc": "doc",
