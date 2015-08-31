@@ -24,6 +24,7 @@ export default Em.TextField.extend({
   autofocus: true,
   _typeahead: null,
   selection: null,
+  optionValuePath: 'value',
 
   focusOut: function(){
     this.sendAction('targetAction', "focus-out");
@@ -64,13 +65,15 @@ export default Em.TextField.extend({
     // Set selected object
     t.on('typeahead:selected', function(event, item) {
       Em.debug("Setting suggestion");
-      that.set('value', item.obj);
+      var optionValuePath = that.get('optionValuePath')
+      that.set('value', item.obj[optionValuePath]);
       that.set('selection', item.obj);
     });
 
     t.on('typeahead:autocompleted', function(event, item) {
       Em.debug("Setting suggestion");
-      that.set('value', item.obj);
+      var optionValuePath = that.get('optionValuePath')
+      that.set('value', item.obj[optionValuePath]);
       that.set('selection', item.obj);
     });
   },
