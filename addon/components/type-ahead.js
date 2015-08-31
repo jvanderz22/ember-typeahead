@@ -64,11 +64,13 @@ export default Em.TextField.extend({
     // Set selected object
     t.on('typeahead:selected', function(event, item) {
       Em.debug("Setting suggestion");
+      that.set('value', item.obj);
       that.set('selection', item.obj);
     });
 
     t.on('typeahead:autocompleted', function(event, item) {
       Em.debug("Setting suggestion");
+      that.set('value', item.obj);
       that.set('selection', item.obj);
     });
   },
