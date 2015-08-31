@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'ember-cli-typeahead',
+  name: 'jvanderz22-ember-cli-typeahead',
   included: function(app) {
     this._super.included(app);
 

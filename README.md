@@ -4,30 +4,20 @@
 This component uses twitter's typeahead (for now) with an ember back-end.
 
 ## Installation
-npm install ember-cli-typeahead --save-dev
-ember g ember-cli-typeahead
+npm install jvanderz22-ember-cli-typeahead --save-dev
+ember g jvanderz22-ember-cli-typeahead
 
 ## Basic Usage
 
   {{type-ahead class="typeahead" placeholder="Search countries"
              name="countries" highlight=true content=content targetAction="typeAheadTargetAction"}}
-             
+
 ## Properties
 
 * content: The data used in the lookup.
-* targetAction: This is the action that will be called on events focusIn, focusOut, keyUp and keyDown. The action 
-will pass in a corresponding value to let the controller know which event triggered it - i.e "focus-in", "focus-out", 
+* targetAction: This is the action that will be called on events focusIn, focusOut, keyUp and keyDown. The action
+will pass in a corresponding value to let the controller know which event triggered it - i.e "focus-in", "focus-out",
 "key-up" or "key-down".
-
-## Demo
-Check out the demo on [github pages](http://gevious.github.io/ember-typeahead/ "Ember-typeahead Demo").
-Alternatively you can clone this repo and run the app
-
-    sudo npm install -g ember-cli
-    git clone git@github.com:gevious/ember-typeahead
-    cd ember-typeahead
-    npm install; bower install
-    ember serve
 
 ## Options
 The typeahead box is a `TextField` and so has all those options available. In

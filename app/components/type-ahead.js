@@ -1,4 +1,4 @@
 import Em from 'ember';
-import Typeahead from 'ember-cli-typeahead/components/type-ahead';
+import Typeahead from 'jvanderz22-ember-cli-typeahead/components/type-ahead';
 
 export default Typeahead;
